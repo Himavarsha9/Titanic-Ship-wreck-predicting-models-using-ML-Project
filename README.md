@@ -1,11 +1,11 @@
 # **Model Card: Titanic Survival Prediction**
 
 ## **Basic Information**
-- **Person or organization developing model**: Himavarsha Yerrapothu (himavarsha.yerrapothu@gwu.edu), Rachel Aska Niharika.
+- **Person or organization developing model**: Himavarsha Yerrapothu (himavarsha.yerrapothu@gwu.edu), Rachel Aska Niharika (rachel.aska@gwu.edu).
 - **Model Date**: December 6, 2024
 - **Model Version**: 1.0
 - **License**: MIT License
-- **Model Implementation Code**: 
+- **Model Implementation Code**: titanic-shipwreck-predicting-models-with-ml.ipynb
 
 ---
 
@@ -85,15 +85,19 @@
 | **Random Forest**      | Training      | 97.9%    | 98.2%     | 97.6%  | 97.9%    |
 |                        | Validation    | 81.0%    | 82.4%     | 79.6%  | 81.0%    |
 
-### **Feature Importance (Random Forest Classifier)**
+## **Conclusion**
 
-The most influential features identified by the Random Forest Classifier:
+### **Best Model: Random Forest Classifier**
 
-1. **Sex**
-2. **Pclass**
-3. **Fare**
-4. **Age**
+The **Random Forest Classifier** is the best-performing model for the Titanic Survival Prediction project due to the following reasons:
 
+1. **High Accuracy**: Achieved **97.9% training accuracy** and **81.0% validation accuracy**, demonstrating strong learning capability and good generalization.
+2. **Balanced Performance**: Maintained a balance between **Precision** (82.4%) and **Recall** (79.6%), minimizing both false positives and false negatives.
+3. **Feature Insights**: Identified key features influencing survival predictions, such as:
+   - **Sex**
+   - **Pclass**
+   - **Fare**
+   - **Age**
 ---
 
 ## **Ethical Considerations**
@@ -103,7 +107,3 @@ The most influential features identified by the Random Forest Classifier:
 - **Unbalanced Classes**: Unequal distribution of survivors and non-survivors could affect fairness in predictions.
 - **Historical Context**: The dataset is specific to the 1912 Titanic disaster and not representative of modern scenarios.
 
-### **Mitigation Steps**
-- Clearly documented biases and limitations.
-- Emphasized educational use only.
-- Transparent feature importance analysis to highlight potential biases.
